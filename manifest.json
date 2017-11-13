@@ -1,0 +1,40 @@
+{
+  "manifest_version": 2,
+  "name": "Funda Travel Time",
+  "description": "Displays travel time to your work or any other specified address",
+  "version": "1.0",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.funda.nl/koop/*/appartement*",
+        "https://www.funda.nl/koop/*/huis*",
+        "https://www.funda.nl/en/koop/*/appartement*",
+        "https://www.funda.nl/en/koop/*/huis*",
+        "https://www.funda.nl/huur/*/appartement*",
+        "https://www.funda.nl/huur/*/huis*",
+        "https://www.funda.nl/en/huur/*/appartement*",
+        "https://www.funda.nl/en/huur/*/huis*"
+      ],
+      "js": [
+        "jquery-3.2.1.min.js",
+        "content.js"
+      ],
+      "css": [
+        "style.css",
+        "icon.css"
+      ]
+    }
+  ],
+  "permissions": [
+    "<all_urls>",
+    "activeTab",
+    "storage"
+  ],
+  "options_ui": {
+    "page": "options.html",
+    "chrome_style": true
+  },
+  "icons": {
+    "128": "icon.png"
+  }
+}

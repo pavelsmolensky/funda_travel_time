@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Options</title>
+    <style>
+        body {
+            padding: 10px;
+            min-width: 500px;
+        }
+
+        input {
+            width: 80%;
+        }
+        #save {
+            margin-top: 3px;
+            margin-left: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <label>
+        Google Maps API Key
+    </label>
+    <br/>
+    <input type="text" id="key"/>
+    <br/>
+
+<fieldset>
+    <legend>Primary address</legend>
+    <label>
+        Your office address, e.g. 1114 AE Amsterdam Spaklerweg 50
+    </label><br/>
+    <input type="text" id="destination1"/>
+    <br/>
+
+    <label>
+        Travel mode
+    </label><br/>
+    <select id="travel_mode1">
+        <option value="transit">Public Transportation</option>
+        <option value="driving">Car</option>
+        <option value="bicycling">Bike</option>
+        <option value="walking">Walk</option>
+    </select><br/>
+</fieldset>
+<fieldset>
+    <legend>Secondary address</legend>
+<label>
+    Other address
+</label><br/>
+<input type="text" id="destination2"/>
+<br/>
+
+
+    <label>
+        Travel mode
+    </label><br/>
+    <select id="travel_mode2">
+        <option value="transit">Public Transportation</option>
+        <option value="driving">Car</option>
+        <option value="bicycling">Bike</option>
+        <option value="walking">Walk</option>
+    </select><br/>
+</fieldset>
+<button id="save">Save</button>
+<script src="jquery-3.2.1.min.js"></script>
+<script src="options.js"></script>
+</body>
+</html>

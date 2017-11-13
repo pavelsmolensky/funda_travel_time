@@ -1,0 +1,17 @@
+.ext-transportation-data {
+    position: fixed;
+    left: 5px;
+    top: -10px;
+    color: white;
+    z-index: 9999;
+    background-color: cornflowerblue;
+    padding: 5px;
+}
+
+.ext-transportation-second {
+    top: 31px;
+}
+
+.ext-transportation-time {
+    font-weight: bold;
+}
