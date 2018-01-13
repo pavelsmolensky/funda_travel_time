@@ -9,7 +9,7 @@ chrome.storage.sync.get({
 }, function (items) {
     var destination1 = normalize_string(items.destination1);
     var destination2 = normalize_string(items.destination2);
-    var origin_address = get_address_at(".object-header-info .object-header-title");
+    var origin_address = get_address_at(".object-header__address");
 
     var request1 = new MapsApiRequest(items.key, origin_address, destination1, items.transport1, true);
     request1.call_maps_api();
